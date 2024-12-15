@@ -4,14 +4,18 @@ let marks = {
     joey : 30,
     ross : 50
 }
-// let arr = []
-// for(let key in marks){
-//     arr.push(marks[key])
-    
-// }
-// console.log(arr);
-
 
 Object.values = null
+if(!Object.values){
+    Object.values = function(obj){
+        temp = []
+        for(let key in obj){
+            temp.push(obj[key])
+        }
+        return temp
+    }
+}
+console.log(Object.values(marks)); // [ 24, 25, 30, 50 ]
+
 
 
