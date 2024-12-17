@@ -6,7 +6,7 @@ let obj = {
 Object.entries = null
 if(!Object.entries){
     Object.entries = function(object){
-        temp = []
+        let temp = []
         for(let key in object){
             temp.push([key,object[key]])
         }

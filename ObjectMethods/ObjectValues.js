@@ -8,7 +8,7 @@ let marks = {
 Object.values = null
 if(!Object.values){
     Object.values = function(obj){
-        temp = []
+        let temp = []
         for(let key in obj){
             temp.push(obj[key])
         }
